@@ -447,7 +447,7 @@ const downloadData = async () => {
 			wch: maxWidths[key] + 2 // +2 for a little extra padding
 		}));
 		const workbook = XLSX.utils.book_new();
-		XLSX.utils.book_append_sheet(workbook, worksheet, "Data"); ``
+		XLSX.utils.book_append_sheet(workbook, worksheet, "Data"); 
 		// Export the workbook to a .xlsx file
 		XLSX.writeFile(workbook, "Blois.xlsx");
 	} catch (error) {
